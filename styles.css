@@ -629,12 +629,17 @@ h1 {
 .people-preview-group {
   display: grid;
   align-content: start;
-  gap: 12px;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, transparent), color-mix(in srgb, var(--bg) 28%, var(--surface)));
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.1);
 }
 
 .group-label {
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--line-strong);
   color: var(--accent-strong);
   font-size: 13px;
@@ -645,7 +650,7 @@ h1 {
 
 .people-preview-pair {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .people-list {
@@ -724,11 +729,11 @@ h1 {
   position: relative;
   display: grid;
   align-content: start;
-  min-height: 172px;
-  padding: 18px;
+  min-height: 158px;
+  padding: 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  background: color-mix(in srgb, var(--surface-strong) 74%, transparent);
 }
 
 .member-preview-card h4 {
