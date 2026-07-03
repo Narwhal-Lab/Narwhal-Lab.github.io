@@ -168,49 +168,58 @@
           </div>
           <a class="secondary-button compact" href="people.html" data-i18n="experts.all">View more people</a>
         </div>
-        <div class="people-preview-grid">
-          <article class="member-preview-card">
-            <p class="member-type" data-i18n="experts.luo.type">Faculty</p>
-            <h3 data-i18n="experts.luo.name">Guibo Luo</h3>
-            <p class="member-affiliation" data-i18n="experts.luo.affiliation">Peking University</p>
-            <p class="member-role" data-i18n="experts.luo.role">Assistant Professor / Researcher</p>
-            <p class="member-focus" data-i18n="experts.luo.focus">Privacy Collaboration · Medical AI</p>
-          </article>
-          <article class="member-preview-card">
-            <p class="member-type" data-i18n="experts.zuo.type">Faculty</p>
-            <h3>Ahang Zuo</h3>
-            <p class="member-affiliation" data-i18n="experts.zuo.affiliation">University of Pau</p>
-            <p class="member-role" data-i18n="experts.zuo.role">Associate Professor</p>
-            <p class="member-focus" data-i18n="experts.zuo.focus">Formal Methods · Digital Twins</p>
-          </article>
-          <article class="member-preview-card">
-            <p class="member-type" data-i18n="experts.su.type">Researcher</p>
-            <h3>Ruoyu Su</h3>
-            <p class="member-affiliation" data-i18n="experts.su.affiliation">University of Oulu</p>
-            <p class="member-role" data-i18n="experts.su.role">Doctoral Researcher</p>
-            <p class="member-focus" data-i18n="experts.su.focus">Agentic AI · Software Architecture</p>
-          </article>
-          <article class="member-preview-card">
-            <p class="member-type" data-i18n="experts.yu.type">Researcher</p>
-            <h3 data-i18n="experts.yu.name">Xingrui Yu</h3>
-            <p class="member-affiliation" data-i18n="experts.yu.affiliation">A*STAR CFAR</p>
-            <p class="member-role" data-i18n="experts.yu.role">Research Scientist</p>
-            <p class="member-focus" data-i18n="experts.yu.focus">Trustworthy AI · Robust Learning</p>
-          </article>
-          <article class="member-preview-card">
-            <p class="member-type" data-i18n="experts.li.type">Industry Expert</p>
-            <h3 data-i18n="experts.li.name">Xin Li</h3>
-            <p class="member-affiliation" data-i18n="experts.li.affiliation">Tencent Security Yunding Lab</p>
-            <p class="member-role" data-i18n="experts.li.role">Head of Attack and Defense</p>
-            <p class="member-focus" data-i18n="experts.li.focus">AI Agent Defense · AI-vs-AI</p>
-          </article>
-          <article class="member-preview-card">
-            <p class="member-type" data-i18n="experts.zhang.type">Industry Expert</p>
-            <h3 data-i18n="experts.zhang.name">Dong Zhang</h3>
-            <p class="member-affiliation" data-i18n="experts.zhang.affiliation">Tencent WuKong</p>
-            <p class="member-role" data-i18n="experts.zhang.role">R&D Security Lead</p>
-            <p class="member-focus" data-i18n="experts.zhang.focus">Code Security · Supply Chain</p>
-          </article>
+        <div class="people-preview-groups">
+          <section class="people-preview-group" aria-labelledby="faculty-preview">
+            <h3 class="group-label" id="faculty-preview" data-i18n="experts.group.faculty">Faculty</h3>
+            <div class="people-preview-pair">
+              <article class="member-preview-card">
+                <h4 data-i18n="experts.luo.name">Guibo Luo</h4>
+                <p class="member-affiliation" data-i18n="experts.luo.affiliation">Peking University</p>
+                <p class="member-role" data-i18n="experts.luo.role">Assistant Professor / Researcher</p>
+                <p class="member-focus" data-i18n="experts.luo.focus">Privacy Collaboration / Medical AI</p>
+              </article>
+              <article class="member-preview-card">
+                <h4>Ahang Zuo</h4>
+                <p class="member-affiliation" data-i18n="experts.zuo.affiliation">University of Pau</p>
+                <p class="member-role" data-i18n="experts.zuo.role">Associate Professor</p>
+                <p class="member-focus" data-i18n="experts.zuo.focus">Formal Methods / Digital Twins</p>
+              </article>
+            </div>
+          </section>
+          <section class="people-preview-group" aria-labelledby="researcher-preview">
+            <h3 class="group-label" id="researcher-preview" data-i18n="experts.group.researchers">Researchers</h3>
+            <div class="people-preview-pair">
+              <article class="member-preview-card">
+                <h4>Ruoyu Su</h4>
+                <p class="member-affiliation" data-i18n="experts.su.affiliation">University of Oulu</p>
+                <p class="member-role" data-i18n="experts.su.role">Doctoral Researcher</p>
+                <p class="member-focus" data-i18n="experts.su.focus">Agentic AI / Software Architecture</p>
+              </article>
+              <article class="member-preview-card">
+                <h4 data-i18n="experts.yu.name">Xingrui Yu</h4>
+                <p class="member-affiliation" data-i18n="experts.yu.affiliation">A*STAR CFAR</p>
+                <p class="member-role" data-i18n="experts.yu.role">Research Scientist</p>
+                <p class="member-focus" data-i18n="experts.yu.focus">Trustworthy AI / Robust Learning</p>
+              </article>
+            </div>
+          </section>
+          <section class="people-preview-group" aria-labelledby="industry-preview">
+            <h3 class="group-label" id="industry-preview" data-i18n="experts.group.industry">Industry Experts</h3>
+            <div class="people-preview-pair">
+              <article class="member-preview-card">
+                <h4 data-i18n="experts.li.name">Xin Li</h4>
+                <p class="member-affiliation" data-i18n="experts.li.affiliation">Tencent Security Yunding Lab</p>
+                <p class="member-role" data-i18n="experts.li.role">Head of Attack and Defense</p>
+                <p class="member-focus" data-i18n="experts.li.focus">AI Agent Defense / AI-vs-AI</p>
+              </article>
+              <article class="member-preview-card">
+                <h4 data-i18n="experts.zhang.name">Dong Zhang</h4>
+                <p class="member-affiliation" data-i18n="experts.zhang.affiliation">Tencent WuKong</p>
+                <p class="member-role" data-i18n="experts.zhang.role">R&D Security Lead</p>
+                <p class="member-focus" data-i18n="experts.zhang.focus">Code Security / Supply Chain</p>
+              </article>
+            </div>
+          </section>
         </div>
       </section>
 

@@ -598,6 +598,7 @@ h1 {
 .feature-grid,
 .people-grid,
 .people-preview-grid,
+.people-preview-groups,
 .timeline-grid,
 .empty-layout {
   display: grid;
@@ -618,6 +619,33 @@ h1 {
 
 .people-preview-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.people-preview-groups {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.people-preview-group {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.group-label {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line-strong);
+  color: var(--accent-strong);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.people-preview-pair {
+  display: grid;
+  gap: 14px;
 }
 
 .people-list {
@@ -696,29 +724,22 @@ h1 {
   position: relative;
   display: grid;
   align-content: start;
-  min-height: 188px;
-  padding: 20px;
+  min-height: 172px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--surface) 90%, transparent);
 }
 
-.member-preview-card h3 {
-  margin: 10px 0 12px;
+.member-preview-card h4 {
+  margin: 0 0 12px;
   color: var(--text);
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1.18;
 }
 
 .member-preview-card p {
   margin: 0;
-}
-
-.member-type {
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
 }
 
 .member-affiliation {
@@ -1165,7 +1186,8 @@ h1 {
 
   .card-grid.four,
   .people-grid,
-  .people-preview-grid {
+  .people-preview-grid,
+  .people-preview-groups {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1297,6 +1319,7 @@ h1 {
   .card-grid.four,
   .people-grid,
   .people-preview-grid,
+  .people-preview-groups,
   .timeline-grid,
   .empty-layout {
     grid-template-columns: 1fr;
