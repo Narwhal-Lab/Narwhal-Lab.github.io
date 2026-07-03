@@ -688,20 +688,31 @@ h1 {
 }
 
 .member-preview-card h3 {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
-.member-mini-list {
+.member-meta {
   display: grid;
-  gap: 6px;
-  margin: 0 0 16px;
+  gap: 4px;
+  margin: 0 0 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
 }
 
-.member-mini-list p {
+.member-meta p {
   margin: 0;
+  line-height: 1.45;
+}
+
+.member-affiliations {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.member-roles {
   color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 13px;
 }
 
 .research-card em {
