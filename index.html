@@ -1,11 +1,15 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Narwhal Lab explores the intersection of artificial intelligence, software systems, and security.">
     <script>
-      document.documentElement.dataset.theme = localStorage.getItem("narwhal-theme") || "dark";
+      (function () {
+        var theme = localStorage.getItem("narwhal-theme") || "dark";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
     </script>
     <title>Narwhal Lab</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">

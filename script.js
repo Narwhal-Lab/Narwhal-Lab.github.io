@@ -235,6 +235,7 @@ function setLanguage(language) {
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
   if (themeIcon) {
     themeIcon.textContent = theme === "dark" ? "☀" : "☾";
   }
