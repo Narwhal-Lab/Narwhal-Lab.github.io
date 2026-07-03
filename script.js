@@ -219,7 +219,7 @@ const themeIcon = document.querySelector(".theme-icon");
 const year = document.querySelector("#year");
 
 const savedLanguage = localStorage.getItem("narwhal-language") || "en";
-const savedTheme = localStorage.getItem("narwhal-theme") || "dark";
+const savedTheme = localStorage.getItem("narwhal-theme") || "light";
 
 function setLanguage(language) {
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";

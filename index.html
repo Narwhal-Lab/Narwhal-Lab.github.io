@@ -6,7 +6,7 @@
     <meta name="description" content="Narwhal Lab explores the intersection of artificial intelligence, software systems, and security.">
     <script>
       (function () {
-        var theme = localStorage.getItem("narwhal-theme") || "dark";
+        var theme = localStorage.getItem("narwhal-theme") || "light";
         var language = localStorage.getItem("narwhal-language") || "en";
         document.documentElement.dataset.theme = theme;
         document.documentElement.dataset.language = language;
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260703-theme-light">
   </head>
   <body>
     <header class="site-header">
@@ -258,6 +258,6 @@
       <span>© <span id="year"></span> Narwhal Lab</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260703-theme-light"></script>
   </body>
 </html>
