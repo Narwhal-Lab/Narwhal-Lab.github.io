@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects and outputs from Narwhal Lab">
+    <title>Projects | Narwhal Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Narwhal Lab home">
+        <img src="assets/logo.jpg" alt="Narwhal Lab logo">
+        <span>Narwhal Lab</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#areas" data-i18n="nav.research">Areas</a>
+        <a class="active" href="works.html" data-i18n="nav.works">Projects</a>
+        <a href="people.html" data-i18n="nav.people">People</a>
+        <a href="index.html#collaborations" data-i18n="nav.collaborations">Collaborations</a>
+        <a href="index.html#join" data-i18n="nav.join">Join Us</a>
+      </nav>
+      <div class="toolbar" aria-label="Display controls">
+        <button class="ghost-button" id="languageToggle" type="button" aria-label="Switch language">中文</button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow" data-i18n="worksPage.eyebrow">Projects & Outputs</p>
+        <h1 data-i18n="worksPage.title">Projects</h1>
+        <p data-i18n="worksPage.copy">Projects, tools, benchmarks, reports, and collaborative outputs from Narwhal Lab.</p>
+        <div class="filter-row" aria-label="Work filters">
+          <button class="filter-button active" data-filter="all" data-i18n="filter.all">All</button>
+          <button class="filter-button" data-filter="Project" data-i18n="filter.project">Project</button>
+          <button class="filter-button" data-filter="Benchmark" data-i18n="filter.benchmark">Benchmark</button>
+          <button class="filter-button" data-filter="Report" data-i18n="filter.report">Report</button>
+          <button class="filter-button" data-filter="Dataset" data-i18n="filter.dataset">Dataset</button>
+          <button class="filter-button" data-filter="Tool" data-i18n="filter.tool">Tool</button>
+        </div>
+      </section>
+
+      <section class="section timeline-section">
+        <div class="year-group" data-year="2026">
+          <h2>2026</h2>
+          <div class="timeline-grid">
+            <article class="work-card" data-types="Benchmark Dataset Tool">
+              <div class="badge-row"><span>Benchmark</span><span>Dataset</span><span>Tool</span></div>
+              <h3>VulnGym</h3>
+              <p class="pub-year">May 2026</p>
+              <p data-i18n="works.vuln.summary">A real-world project-level benchmark for evaluating white-box vulnerability detection agents, built from high-impact open-source vulnerabilities.</p>
+              <ul>
+                <li>400+ vulnerability paths</li>
+                <li>Project-level white-box evaluation</li>
+                <li>Entry point, trace, and critical operation annotations</li>
+              </ul>
+              <p class="partners">Tencent WuKong · CUHK ARISE Lab · Fudan University · HKU JC STEM Lab · Narwhal Lab</p>
+              <div class="pub-links">
+                <a href="https://github.com/Tencent/VulnGym">GitHub</a>
+                <a href="https://huggingface.co/datasets/tencent/VulnGym">Dataset</a>
+              </div>
+            </article>
+            <article class="work-card" data-types="Report">
+              <div class="badge-row"><span>Report</span><span>Empirical Study</span></div>
+              <h3>AI-Generated Code Security in the Wild</h3>
+              <p class="pub-year">2026</p>
+              <p data-i18n="works.report.summary">A real-world empirical study on how AI-generated code is used, evolves, and participates in the vulnerability lifecycle.</p>
+              <ul>
+                <li>Open-source ecosystem analysis</li>
+                <li>Security risks in AI-generated code</li>
+                <li>Governance recommendations for AI-assisted development</li>
+              </ul>
+              <p class="partners">Tencent WuKong · Narwhal Lab · Fudan University</p>
+            </article>
+            <article class="work-card" data-types="Project Tool">
+              <div class="badge-row"><span>Project</span><span>Tool</span><span>Agent Infrastructure</span></div>
+              <h3>MagicSkills</h3>
+              <p class="pub-year">Mar 2026</p>
+              <p data-i18n="works.magic.summary">An open-source infrastructure layer for managing, installing, composing, syncing, and invoking reusable AI agent skills.</p>
+              <ul>
+                <li>Agent skill package management</li>
+                <li>AGENTS.md synchronization</li>
+                <li>Unified CLI and Python API</li>
+              </ul>
+              <p class="partners">Narwhal Lab</p>
+              <div class="pub-links">
+                <a href="https://github.com/Narwhal-Lab/MagicSkills">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="year-group" data-year="2025">
+          <h2>2025</h2>
+          <div class="timeline-grid">
+            <article class="work-card" data-types="Benchmark Tool">
+              <div class="badge-row"><span>Benchmark</span><span>Evaluation Framework</span></div>
+              <h3>AICGSecEval</h3>
+              <p class="pub-year">Oct 2025</p>
+              <p data-i18n="works.aicg.summary">A project-level security evaluation framework for AI-generated code, designed for transparent and reproducible comparison.</p>
+              <ul>
+                <li>Project-level AI code security evaluation</li>
+                <li>Transparent and reproducible dataset</li>
+                <li>Leaderboard-ready evaluation workflow</li>
+              </ul>
+              <p class="partners">Tencent · Narwhal Lab</p>
+              <div class="pub-links">
+                <a href="https://aicgseceval.tencent.com/home">Website</a>
+                <a href="https://github.com/Tencent/AICGSecEval">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Narwhal Lab</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="People at Narwhal Lab">
+    <title>People | Narwhal Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Narwhal Lab home">
+        <img src="assets/logo.jpg" alt="Narwhal Lab logo">
+        <span>Narwhal Lab</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#areas" data-i18n="nav.research">Areas</a>
+        <a href="works.html" data-i18n="nav.works">Projects</a>
+        <a class="active" href="people.html" data-i18n="nav.people">People</a>
+        <a href="index.html#collaborations" data-i18n="nav.collaborations">Collaborations</a>
+        <a href="index.html#join" data-i18n="nav.join">Join Us</a>
+      </nav>
+      <div class="toolbar" aria-label="Display controls">
+        <button class="ghost-button" id="languageToggle" type="button" aria-label="Switch language">中文</button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow" data-i18n="peoplePage.eyebrow">Team Network</p>
+        <h1 data-i18n="peoplePage.title">People</h1>
+        <p data-i18n="peoplePage.copy">Collaborating faculty, experts, and student members connected through Narwhal Lab.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="people.faculty.kicker">Collaborating Faculty & Experts</p>
+          <h2 data-i18n="people.faculty.title">People who connect Narwhal Lab with research and real-world practice.</h2>
+        </div>
+        <div class="people-list">
+          <article class="person-card">
+            <div class="person-body">
+              <p class="role" data-i18n="people.role.faculty">Faculty</p>
+              <h3 data-i18n="people.luo.name">Guibo Luo</h3>
+              <p class="affiliation" data-i18n="people.luo.affiliation">School of Computer Science, Peking University</p>
+              <p data-i18n="people.luo.bio">Assistant Professor / Researcher and Ph.D. Supervisor. His research includes privacy-preserving collaborative computing, medical image intelligence, and efficient training and inference for large models.</p>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-body">
+              <p class="role" data-i18n="people.role.faculty">Faculty</p>
+              <h3>Ahang Zuo</h3>
+              <p class="affiliation">University of Pau, France</p>
+              <p data-i18n="people.zuo.bio">Associate Professor working on formal verification, business process modelling and analysis, digital twins, and AI-assisted software engineering.</p>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-body">
+              <p class="role" data-i18n="people.role.researcher">Researcher</p>
+              <h3>Ruoyu Su</h3>
+              <p class="affiliation">University of Oulu, Finland</p>
+              <p data-i18n="people.su.bio">Doctoral Researcher at the University of Oulu, working at the intersection of Agentic AI, LLMs, software architecture, and empirical software engineering.</p>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-body">
+              <p class="role" data-i18n="people.role.researcher">Researcher</p>
+              <h3 data-i18n="people.yu.name">Xingrui Yu</h3>
+              <p class="affiliation">A*STAR CFAR, Singapore</p>
+              <p data-i18n="people.yu.bio">Research Scientist at A*STAR CFAR, working on trustworthy AI, robust machine learning, learning with noisy labels, imitation learning, and AI safety for code and agentic systems.</p>
+              <a class="profile-link" href="https://www.linkedin.com/in/xingrui-yu-180450114">LinkedIn</a>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-body">
+              <p class="role" data-i18n="people.role.expert">Industry Expert</p>
+              <h3 data-i18n="people.zhang.name">Dong Zhang</h3>
+              <p class="affiliation">Tencent</p>
+              <p data-i18n="people.zhang.bio">R&D and security expert at Tencent and lead of WuKong R&D Security, focusing on code security, software supply-chain security, AI Agent security, LLM supply-chain security, and security infrastructure for agentic systems.</p>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-body">
+              <p class="role" data-i18n="people.role.expert">Industry Expert</p>
+              <h3 data-i18n="people.li.name">Xin Li</h3>
+              <p class="affiliation" data-i18n="people.li.affiliation">Tencent Security Yunding Lab</p>
+              <p data-i18n="people.li.bio">Head of attack and defense at Tencent Security Yunding Lab, working on practical cybersecurity operations, AI Agent defense logic, AI-vs-AI security immunity systems, and attack-defense cost control.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact-section">
+        <article class="empty-card student-panel">
+          <p class="section-kicker" data-i18n="people.students.kicker">Students</p>
+          <h2 data-i18n="people.students.title">Student members will be added soon.</h2>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Narwhal Lab</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

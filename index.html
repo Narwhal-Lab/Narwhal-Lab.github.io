@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Narwhal Lab explores the intersection of artificial intelligence, software systems, and security.">
+    <title>Narwhal Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Narwhal Lab home">
+        <img src="assets/logo.jpg" alt="Narwhal Lab logo">
+        <span>Narwhal Lab</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#areas" data-i18n="nav.research">Areas</a>
+        <a href="works.html" data-i18n="nav.works">Projects</a>
+        <a href="people.html" data-i18n="nav.people">People</a>
+        <a href="index.html#collaborations" data-i18n="nav.collaborations">Collaborations</a>
+        <a href="index.html#join" data-i18n="nav.join">Join Us</a>
+      </nav>
+      <div class="toolbar" aria-label="Display controls">
+        <button class="ghost-button" id="languageToggle" type="button" aria-label="Switch language">中文</button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">AI, Software Systems, and Security</p>
+          <h1>Narwhal Lab</h1>
+          <p class="hero-copy" data-i18n="hero.copy">
+            We study AI code intelligence, language-model agents, trustworthy intelligent systems, and high-value AI applications in real-world engineering and security settings.
+          </p>
+          <div class="hero-tags" aria-label="Research keywords">
+            <span>AI Code Intelligence</span>
+            <span>Agent Data & Evolution</span>
+            <span>Trustworthy Systems</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-atlas" aria-hidden="true">
+            <div class="hero-glow"></div>
+            <div class="hero-rings">
+              <div class="logo-orbit">
+                <img src="assets/logo.jpg" alt="Narwhal Lab logo">
+              </div>
+            </div>
+            <span class="atlas-pill atlas-pill-top-left" data-i18n="hero.pill.vuln">Vulnerability Analysis</span>
+            <span class="atlas-pill atlas-pill-top" data-i18n="hero.pill.aicode">AI Code Intelligence</span>
+            <span class="atlas-pill atlas-pill-upper-right" data-i18n="hero.pill.agents">Agent Data</span>
+            <span class="atlas-pill atlas-pill-right" data-i18n="hero.pill.agentsecurity">AI-vs-AI Defense</span>
+            <span class="atlas-pill atlas-pill-bottom-right" data-i18n="hero.pill.infrastructure">AI Engineering</span>
+            <span class="atlas-pill atlas-pill-bottom" data-i18n="hero.pill.evaluation">Real-World Eval</span>
+            <span class="atlas-pill atlas-pill-bottom-left" data-i18n="hero.pill.benchmarks">Benchmarks</span>
+            <span class="atlas-pill atlas-pill-left" data-i18n="hero.pill.governance">Governance</span>
+          </div>
+          <div class="hero-sidecopy">
+            <p data-i18n="hero.sidecopy">Evidence, benchmarks, and tools for trustworthy AI-era software and agent systems.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="about.kicker">About</p>
+          <h2 data-i18n="about.title">Exploring AI code intelligence, agent systems, and trustworthy engineering in the AI era.</h2>
+        </div>
+        <div class="wide-copy about-copy">
+          <p data-i18n="about.copy.primary">
+            Narwhal Lab studies how AI-generated code, large language model agents, agent data, and trustworthy intelligent systems reshape software development, security evaluation, and real-world AI applications.
+          </p>
+          <p data-i18n="about.copy.secondary">
+            Along these directions, we conduct empirical studies on real-world projects, build reproducible evaluation benchmarks, develop agent infrastructure, and explore AI-vs-AI defense and high-value application scenarios with academic and industry partners.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="areas">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="research.kicker">Areas</p>
+          <h2 data-i18n="research.title">Open directions across AI code intelligence, agent evolution, trustworthy systems, and high-value applications.</h2>
+        </div>
+        <div class="card-grid four">
+          <article class="research-card">
+            <span>MODULE 01</span>
+            <h3 data-i18n="research.aiCode.title">AI Code Intelligence & Trustworthy Development</h3>
+            <p data-i18n="research.aiCode.copy">Study how large models participate in real software development, including code generation, code understanding, project-level evaluation, automated repair, and quality and security analysis.</p>
+            <em data-i18n="research.aiCode.em">Code · Evaluation · Repair</em>
+          </article>
+          <article class="research-card">
+            <span>MODULE 02</span>
+            <h3 data-i18n="research.agent.title">Agent Applications, Data, and Self-Evolution</h3>
+            <p data-i18n="research.agent.copy">Explore how agents complete complex real-world tasks, accumulate trajectories, interaction feedback, and tool-use data, and improve through evaluation, reflection, and continuous iteration.</p>
+            <em data-i18n="research.agent.em">Agents · Data · Evolution</em>
+          </article>
+          <article class="research-card">
+            <span>MODULE 03</span>
+            <h3 data-i18n="research.eval.title">Trustworthy Intelligent Systems & Security Evaluation</h3>
+            <p data-i18n="research.eval.copy">Study reliability, security, and controllability of model and agent systems, including robustness evaluation, risk discovery, tool-use security, AI-vs-AI defense, and security immunity systems.</p>
+            <em data-i18n="research.eval.em">Trust · Defense · Evaluation</em>
+          </article>
+          <article class="research-card">
+            <span>MODULE 04</span>
+            <h3 data-i18n="research.infra.title">AI for High-Value Scenarios</h3>
+            <p data-i18n="research.infra.copy">Explore large models, agents, and multimodal AI in medical imaging, privacy-preserving collaboration, multi-institutional data cooperation, and other real-world high-value scenarios.</p>
+            <em data-i18n="research.infra.em">Medical AI · Privacy · Deployment</em>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="featured">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="section-kicker" data-i18n="featured.kicker">Projects</p>
+            <h2 data-i18n="featured.title">Open-source systems, benchmarks, reports, and evaluation frameworks.</h2>
+          </div>
+          <a class="secondary-button compact" href="works.html" data-i18n="featured.all">View all projects</a>
+        </div>
+        <div class="feature-grid">
+          <article class="work-card featured-card">
+            <div class="badge-row"><span>Tool</span><span>Agent Infrastructure</span></div>
+            <h3>MagicSkills</h3>
+            <p data-i18n="featured.magic">A reusable skill management layer for installing, composing, syncing, and invoking AI agent capabilities.</p>
+            <a href="https://github.com/Narwhal-Lab/MagicSkills">GitHub</a>
+          </article>
+          <article class="work-card featured-card">
+            <div class="badge-row"><span>Benchmark</span><span>Dataset</span></div>
+            <h3>VulnGym</h3>
+            <p data-i18n="featured.vuln">A real-world project-level benchmark for white-box vulnerability detection agents.</p>
+            <a href="https://github.com/Tencent/VulnGym">GitHub</a>
+          </article>
+          <article class="work-card featured-card">
+            <div class="badge-row"><span>Benchmark</span><span>Evaluation</span></div>
+            <h3>AICGSecEval</h3>
+            <p data-i18n="featured.aicg">A project-level evaluation framework for security risks in AI-generated code.</p>
+            <a href="https://github.com/Tencent/AICGSecEval">GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experts">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="section-kicker" data-i18n="experts.kicker">People</p>
+            <h2 data-i18n="experts.title">Research and industry mentors connected to Narwhal Lab.</h2>
+          </div>
+          <a class="secondary-button compact" href="people.html" data-i18n="experts.all">View more people</a>
+        </div>
+        <div class="feature-grid">
+          <article class="work-card featured-card">
+            <div class="badge-row"><span data-i18n="experts.card1.badge1">Academic</span><span data-i18n="experts.card1.badge2">AI + Systems</span></div>
+            <h3 data-i18n="experts.card1.title">Guibo Luo · Ahang Zuo</h3>
+            <p data-i18n="experts.card1.copy">Privacy-preserving collaboration, medical AI, efficient large-model deployment, formal verification, digital twins, and AI-assisted software engineering.</p>
+          </article>
+          <article class="work-card featured-card">
+            <div class="badge-row"><span data-i18n="experts.card2.badge1">Research</span><span data-i18n="experts.card2.badge2">Agents + Trustworthy AI</span></div>
+            <h3 data-i18n="experts.card2.title">Ruoyu Su · Xingrui Yu</h3>
+            <p data-i18n="experts.card2.copy">Agentic AI, LLMs, software architecture, empirical software engineering, robust machine learning, and AI safety for code and agent systems.</p>
+          </article>
+          <article class="work-card featured-card">
+            <div class="badge-row"><span data-i18n="experts.card3.badge1">Industry</span><span data-i18n="experts.card3.badge2">Real-World Security</span></div>
+            <h3 data-i18n="experts.card3.title">Xin Li · Dong Zhang</h3>
+            <p data-i18n="experts.card3.copy">AI Agent defense, AI-vs-AI security immunity systems, attack-defense practice, code security, software supply-chain security, and industrial security infrastructure.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="collaborations">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="collab.kicker">Collaborations</p>
+          <h2 data-i18n="collab.title">Connecting academic research with real-world engineering practice.</h2>
+          <p data-i18n="collab.copy">We work with universities, research institutes, and industry teams to turn real engineering, security, and high-value application problems into reproducible research, systems, and AI engineering outcomes.</p>
+        </div>
+        <div class="collab-layout">
+          <article class="network-panel">
+            <h3 data-i18n="collab.industry">Industry Partners</h3>
+            <ul class="partner-list">
+              <li>Tencent WuKong Code Security Team</li>
+              <li>Tencent TEG Security Platform Department</li>
+              <li>Tencent Security Yunding Lab</li>
+              <li>Huawei Terminal Cloud Innovation AI Lab</li>
+            </ul>
+          </article>
+          <article class="network-panel">
+            <h3 data-i18n="collab.academic">Academic Partners</h3>
+            <ul class="partner-list">
+              <li>Fudan University System Software and Security Lab</li>
+              <li>CUHK ARISE Lab</li>
+              <li>HKU JC STEM Lab of Intelligent Cybersecurity</li>
+              <li>CAS Network Threat Analysis Research Group</li>
+              <li>A*STAR CFAR</li>
+              <li>University of Pau</li>
+              <li>University of Oulu</li>
+              <li>Inria</li>
+              <li>CNRS</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section join-section" id="join">
+        <div>
+          <p class="section-kicker" data-i18n="join.kicker">Join Us</p>
+          <h2 data-i18n="join.title">Join us to work on AI code intelligence, agent systems, and trustworthy AI engineering.</h2>
+          <p data-i18n="join.copy">We welcome motivated undergraduate, master’s, and Ph.D. students, including remote interns and overseas students. Students can participate in research and engineering projects on AI code intelligence, agent applications, agent data and self-evolution, trustworthy system evaluation, AI-vs-AI defense, and high-value AI scenarios.</p>
+          <ul class="join-benefit-list" aria-label="Internship support">
+            <li data-i18n="join.benefit1">Mature research projects and computing resources</li>
+            <li data-i18n="join.benefit2">Remote collaboration and onsite workspace at the Peking University lab in Shenzhen University Town</li>
+            <li data-i18n="join.benefit3">Compensation based on ability and contribution</li>
+            <li data-i18n="join.benefit4">Overseas onsite collaboration, Visiting opportunities, and CSC-related programs depending on project fit and individual progress</li>
+          </ul>
+          <div class="join-actions" aria-label="Contact and social links">
+            <span class="contact-label" data-i18n="join.contact">Contact</span>
+            <a class="email-link" href="mailto:narwhallab.team@gmail.com" aria-label="Email Narwhal Lab">
+              <img src="assets/social/gmail.svg" alt="" aria-hidden="true">
+              <span>narwhallab.team@gmail.com</span>
+            </a>
+            <div class="social-links">
+              <a class="social-icon" href="https://x.com/NarwhalLab" aria-label="X"><img src="assets/social/x.svg" alt="" aria-hidden="true"></a>
+              <a class="social-icon" href="https://xhslink.com/m/96vGqTN0wJO" aria-label="Xiaohongshu"><img src="assets/social/xiaohongshu.svg" alt="" aria-hidden="true"></a>
+              <a class="social-icon" href="https://github.com/Narwhal-Lab" aria-label="GitHub"><img src="assets/social/github.svg" alt="" aria-hidden="true"></a>
+              <span class="social-icon social-wechat-card" tabindex="0" aria-label="WeChat Narwhal Lab QR code">
+                <img src="assets/social/wechat.svg" alt="" aria-hidden="true">
+                <span class="wechat-popover" aria-hidden="true">
+                  <img src="assets/social/wechat-qr.jpg" alt="">
+                  <span>微信公众号：Narwhal Lab</span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Narwhal Lab</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
