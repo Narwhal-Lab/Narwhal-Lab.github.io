@@ -223,6 +223,7 @@ const savedTheme = localStorage.getItem("narwhal-theme") || "dark";
 
 function setLanguage(language) {
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+  document.documentElement.dataset.language = language;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
     node.textContent = translations[language][key] || translations.en[key] || node.textContent;
@@ -231,6 +232,7 @@ function setLanguage(language) {
     languageToggle.textContent = language === "en" ? "中文" : "EN";
   }
   localStorage.setItem("narwhal-language", language);
+  delete document.documentElement.dataset.i18nPending;
 }
 
 function setTheme(theme) {

@@ -7,8 +7,13 @@
     <script>
       (function () {
         var theme = localStorage.getItem("narwhal-theme") || "dark";
+        var language = localStorage.getItem("narwhal-language") || "en";
         document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.language = language;
         document.documentElement.style.colorScheme = theme;
+        if (language === "zh") {
+          document.documentElement.dataset.i18nPending = "true";
+        }
       })();
     </script>
     <title>People | Narwhal Lab</title>
