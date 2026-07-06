@@ -772,22 +772,6 @@ h1 {
   line-height: 1.35;
 }
 
-.member-opportunity {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  min-height: 34px;
-  margin-top: 14px;
-  padding: 0 12px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 92%, white), var(--accent-2));
-  color: #06111a;
-  font-size: 13px;
-  font-weight: 900;
-}
-
 .research-card em {
   position: absolute;
   right: 18px;
