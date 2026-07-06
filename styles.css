@@ -772,6 +772,22 @@ h1 {
   line-height: 1.35;
 }
 
+.member-opportunity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 34px;
+  margin-top: 14px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 92%, white), var(--accent-2));
+  color: #06111a;
+  font-size: 13px;
+  font-weight: 900;
+}
+
 .research-card em {
   position: absolute;
   right: 18px;
@@ -843,6 +859,12 @@ h1 {
 .profile-actions .profile-link:hover {
   border-color: var(--line-strong);
   background: color-mix(in srgb, var(--surface-strong) 82%, transparent);
+}
+
+.profile-actions .recruitment-link {
+  border-color: var(--line-strong);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #06111a;
 }
 
 .partners,
@@ -979,6 +1001,38 @@ h1 {
   height: 7px;
   border-radius: 50%;
   background: var(--accent-2);
+}
+
+.join-special-callout {
+  display: grid;
+  gap: 5px;
+  max-width: 720px;
+  margin-top: 26px;
+  padding: 18px 20px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 62%),
+    color-mix(in srgb, var(--surface-strong) 78%, transparent);
+}
+
+.join-special-callout span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.join-special-callout strong {
+  color: var(--text);
+  font-size: 19px;
+  line-height: 1.25;
+}
+
+.join-special-callout em {
+  color: var(--muted);
+  font-size: 14px;
+  font-style: normal;
 }
 
 .join-actions {
